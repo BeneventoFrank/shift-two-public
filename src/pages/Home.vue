@@ -1,6 +1,6 @@
 <template>
   <div style="display:flex; flex-direction:column;">
-    <div ref='home' class="fade-in" :style="`height:100vh; width:100vw; margin:auto; display:flex; flex-direction:column; background: #535457 ${'url(' + require('../assets/img/landing.png') + ') no-repeat center center; background-size:cover;' }`">
+    <div ref='home' class="fade-in" :style="`height:100vh; width:100%; margin:auto; display:flex; flex-direction:column; background: #535457 ${'url(' + require('../assets/img/landing.png') + ') no-repeat center center; background-size:cover;' }`">
       <div :style="`position:fixed; display:flex; top:0; left:0; align-items:center; width:100%; justify-content:space-between; height:128px; background: ${headerBackgroundColor}; box-shadow: 0 6px 7px -2px black; `">
           <img style="height:100px; width:120px; margin-left:20px;" src="../assets/img/logo.png" />
           <div style="margin-right:20px;">
@@ -16,21 +16,21 @@
         <span :style="`color:#BB4F16; padding-top:150px; font-size:42px; margin-left:14px;`">Shift-Two</span>
       </div>
       <div style="margin-top:128px; display:flex; justify-content:center; width:100%;">
-        <router-link to="recent-work"  >
-          <span style="color:white; font-size:25px;">Check Out Our Latest Work</span>
+        <router-link to="recent-work" class='link' >
+          <span class='latestWork'>Check Out Our Latest Work</span>
         </router-link>
       </div>
     </div>
 
-    <div ref="tech" :style="`height:100vh; width:100vw; margin:auto; display:flex; justify-content:center;  background: #535457 ${'url(' + require('../assets/img/landingBottom.png') + ') no-repeat center center; background-size:cover;' }`">
+    <div ref="tech" :style="`height:100vh; width:100%; margin:auto; display:flex; justify-content:center;  background: #535457 ${'url(' + require('../assets/img/landingBottom.png') + ') no-repeat center center; background-size:cover;' }`">
         <span class="sectionHeader">Our Technology</span>
     </div>
 
-    <div ref="us" :style="`height:100vh; width:100vw; margin:auto; display:flex; justify-content:center; background: #535457 ${'url(' + require('../assets/img/landing.png') + ') no-repeat center center; background-size:cover;' }`">
+    <div ref="us" :style="`height:100vh; width:100%; margin:auto; display:flex; justify-content:center; background: #535457 ${'url(' + require('../assets/img/landing.png') + ') no-repeat center center; background-size:cover;' }`">
         <span class="sectionHeader">About Us</span>
     </div>
 
-    <div ref="com" :style="`height:100vh; width:100vw; margin:auto; display:flex; justify-content:center; background: #535457 ${'url(' + require('../assets/img/landingBottom.png') + ') no-repeat center center; background-size:cover;' }`">
+    <div ref="com" :style="`height:100vh; width:100%; margin:auto; display:flex; justify-content:center; background: #535457 ${'url(' + require('../assets/img/landingBottom.png') + ') no-repeat center center; background-size:cover;' }`">
         <span class="sectionHeader">Community</span>    
     </div>
   </div>
@@ -61,10 +61,21 @@ export default {
 };
 </script>
 <style>
+  .latestWork {
+      color:white; 
+      font-size:25px;    
+  }
   .sectionHeader{
     font-size: 50px;
     color:white;
     margin-top:130px;
+  }
+  .link{
+    text-decoration: none;
+  }
+  .link :hover{
+    text-decoration: underline;
+    text-decoration-color: #BB4F16;
   }
   .linkText{
     color:#BB4F16;
