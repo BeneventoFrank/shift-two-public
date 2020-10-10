@@ -2,12 +2,17 @@ import Vue from "vue";
 import Router from "vue-router";
 
 //  Main Pages
+import Landing from "./views/Landing.vue";
+
+
+
+
 import Index from "./views/Index.vue";
 import Sections from "./views/Sections.vue";
 import Presentation from "./views/Presentation.vue";
 
-//  Main Examples
-import Landing from "./views/examples/Landing.vue";
+
+
 import Login from "./views/examples/Login.vue";
 import Profile from "./views/examples/Profile.vue";
 import AboutUs from "./views/examples/AboutUs.vue";
@@ -20,7 +25,6 @@ import Ecommerce from "./views/examples/Ecommerce.vue";
 import Product from "./views/examples/Product.vue";
 import Signup from "./views/examples/Signup.vue";
 import Error from "./views/examples/Error.vue";
-
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
 
@@ -31,7 +35,7 @@ export default new Router({
     {
       path: "/",
       name: "index",
-      components: { default: Index, header: MainNavbar, footer: MainFooter },
+      components: { default: Landing, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400, navbarTransparent: true }
       }

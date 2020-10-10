@@ -12,9 +12,7 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">
-          {{ brand }}
-        </h3>
+        <img :src="logo" style="height:80px; width:110px;" />
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -189,11 +187,6 @@
                   href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean"
                 >
-                  <div class="md-list-item-content">
-                    <md-button
-                      class="md-success md-round"
-                    ><md-icon>shopping_cart</md-icon>Buy now</md-button>
-                  </div>
                 </a>
               </li>
             </md-list>
@@ -251,11 +244,11 @@ export default {
   },
   data() {
     return {
+      logo: require("@/assets/img/logo.png"),
       docs_link:
         "https://demos.creative-tim.com/vue-material-kit-pro/documentation/",
       extraNavClasses: "",
       toggledClass: false,
-      brand: "Vue Material Kit PRO",
       linksSections: [
         { name: "headers", icon: "dns" },
         { name: "features", icon: "build" },

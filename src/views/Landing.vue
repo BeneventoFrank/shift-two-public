@@ -6,25 +6,36 @@
       :style="headerStyle"
     >
       <div class="container">
+        <div class="md-layout spaceBottom">
+          <div class="md-layout-item" style=" display:flex; white-space:nowrap; justify-content:center;">
+            <h1 class="title ">
+              Welcome to 
+            </h1>
+            <h1 class="title fullScreen" style="color:#c66019 !important; margin-left:15px;">
+              Shift-Two
+            </h1>            
+          </div>
+        </div>
+        <div class="md-layout smallOnly">
+          <div class="md-layout-item" style=" display:flex; white-space:nowrap; justify-content:center; margin-top:-100px; margin-bottom:200px;">
+              <h1 class="title" style="color:#c66019 !important; margin-left:15px;">
+                 Shift-Two
+              </h1>            
+          </div>
+        </div>
         <div class="md-layout">
           <div class="md-layout-item md-size-50 md-small-size-100">
             <h1 class="title">
               Your Story Starts With Us.
             </h1>
             <h4>
-              Every landing page needs a small description after the big bold
-              title, that's why we added this text here. Add here all the
-              information that can make you or your product create the first
-              impression.
+              Shift-Two is commited to your success. It is our mission to lower your costs and improve efficiency while doing it. Whether its Software Development or AWS Management, our team of experts are standing by. 
             </h4>
             <br>
-            <md-button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              class="md-success md-lg"
-              target="_blank"
-            >
-              <i class="fas fa-play" /> Watch video
-            </md-button>
+            <h3 style="color:#c66019 !important;">
+              How can we help you?
+            </h3>
+            <br>
           </div>
         </div>
       </div>
@@ -37,14 +48,10 @@
               class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center"
             >
               <h2 class="title text-center">
-                Let's talk product
+                Products and Services
               </h2>
               <h5 class="description">
-                This is the paragraph where you can write more details about
-                your product. Keep you user engaged by providing meaningful
-                information. Remember that by this time, the user is curious,
-                otherwise he wouldn't scroll to get here. Add a button if you
-                want the user to see more.
+                Shift-Two offers services that are tailored for your needs.  If you need a new project completed, check out our 'cradle to grave' service.  Looking for someone to fine tune your AWS infrastructure? Our team of AWS certified professionals will lower your costs, eliminate random bugs, and tune your AWS envionrment so you're maximizing your ROI. 
               </h5>
             </div>
           </div>
@@ -53,48 +60,56 @@
               <div class="md-layout-item md-size-33 md-small-size-100">
                 <div class="info">
                   <div class="icon icon-info">
-                    <md-icon>chat</md-icon>
+                    <img style="height:100px; width:150px;" :src="productImages.aws"/>
                   </div>
                   <h4 class="info-title">
-                    Free Chat
+                    AWS Consulting
                   </h4>
                   <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
+                    Work with our world class technicians to help tackle your toughest problems.  Our trained experts will work with you to reduce monthly costs, ensure your infrastructure is optimized as well as present you with recommendations.  
                   </p>
                 </div>
               </div>
               <div class="md-layout-item md-size-33 md-small-size-100">
                 <div class="info">
                   <div class="icon icon-success">
-                    <md-icon>verified_user</md-icon>
+                    <img style="height:100px; width:150px;" :src="productImages.soft"/>
                   </div>
                   <h4 class="info-title">
-                    Verified Users
+                    Software Development
                   </h4>
                   <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
+                    With a combined 40+ years of development experience our team is well versed in producing software.  Our team enjoys leveraging technologies such as Vue.js, React.js, even ASP.NET and Mobile.  Collaborate with our development team to bring your next project to life.
                   </p>
                 </div>
               </div>
               <div class="md-layout-item md-size-33 md-small-size-100">
                 <div class="info">
                   <div class="icon icon-danger">
-                    <md-icon>fingerprint</md-icon>
+                    <img style="height:100px; width:120px;" :src="productImages.maint"/>
                   </div>
                   <h4 class="info-title">
-                    Fingerprint
+                    Support
                   </h4>
                   <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
+                    Need a team to look after your new application? Our team will maintain your new creation and provide scalable rock solid solutions using AWS.  Looking to migrate your existing infrastructure to AWS? Our team will analyze your needs and prepare AWS specs for your consideration. 
                   </p>
                 </div>
               </div>
+              <div class="md-layout-item md-size-100 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <img style="height:100px; width:120px;" :src="productImages.open"/>
+                  </div>
+                  <h4 class="info-title">
+                    Open Source
+                  </h4>
+                  <p>
+                    At Shift-Two, we believe in giving back to the community. Our open source projects are aimed directly at the developer experience.  Our goal is to provide tools that allow the developer to work faster and with out all the clutter and configuration getting in the way.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -113,7 +128,6 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
-                  :card-image="cardProfile3.cardProfile1"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
@@ -156,7 +170,6 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
-                  :card-image="cardProfile3.cardProfile2"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
@@ -205,7 +218,6 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
-                  :card-image="cardProfile3.cardProfile3"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
@@ -248,7 +260,6 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
-                  :card-image="cardProfile3.cardProfile4"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
@@ -356,15 +367,15 @@ export default {
   bodyClass: "landing-page",
   data() {
     return {
-      image: require("@/assets/img/bg7.jpg"),
+      image: require("@/assets/img/adf.jpg"),
       name: null,
       email: null,
       message: null,
-      cardProfile3: {
-        cardProfile1: require("@/assets/img/faces/card-profile1-square.jpg"),
-        cardProfile2: require("@/assets/img/faces/card-profile6-square.jpg"),
-        cardProfile3: require("@/assets/img/faces/card-profile4-square.jpg"),
-        cardProfile4: require("@/assets/img/faces/card-profile2-square.jpg")
+      productImages: {
+        soft: require("@/assets/img/software.png"),
+        maint: require("@/assets/img/maint.png"),
+        aws: require("@/assets/img/aws.png"),
+        open: require("@/assets/img/open.png")
       }
     };
   }
@@ -382,5 +393,27 @@ export default {
 
 .md-has-textarea + .md-layout {
   margin-top: 15px;
+}
+.smallOnly {
+  display:none;
+}
+.fullScreen{
+  display:block;
+}
+.spaceBottom{
+  margin-bottom:150px;
+}
+@media only screen and (max-width: 768px) {
+  .fullScreen {
+    display:none;
+  }
+  .spaceBottom{
+    margin-bottom:0px;
+  }
+  .smallOnly {
+    display:block;
+    margin-top:70px;
+  }
+
 }
 </style>
