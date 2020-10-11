@@ -23,7 +23,7 @@
               </h1>            
           </div>
         </div>
-        <div class="md-layout">
+        <div class="md-layout largeOnly">
           <div class="md-layout-item md-size-50 md-small-size-100">
             <h1 class="title">
               Your Story Starts With Us.
@@ -105,11 +105,10 @@
                     Open Source
                   </h4>
                   <p>
-                    At Shift-Two, we believe in giving back to the community. Our open source projects are aimed directly at the developer experience.  Our goal is to provide tools that allow the developer to work faster and with out all the clutter and configuration getting in the way.
+                    At Shift-Two, we believe in giving back to the community. Our open source projects are aimed directly at the developer experience.  Our goal is to provide tools that allow the developer to work faster and without all the clutter and configuration getting in the way.
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -117,7 +116,7 @@
       <div class="section text-center">
         <div class="container">
           <h2 class="title">
-            Here is our team
+            Leadership
           </h2>
           <div class="team">
             <div class="md-layout">
@@ -128,20 +127,20 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
+                  :card-image="profileImages.daniel"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      Alec Thompson
+                      Daniel Hillis
                     </h4>
                     <h6 class="card-category text-muted">
-                      Founder
+                      Co-Founder, CFO
                     </h6>
                     <p class="card-description">
-                      Don't be scared of the truth because we need to restart
-                      the human foundation in truth...
+                      Daniel has been excelling in the IT industry for over 20 years. Starting out as a developer, Daniel has climbed his way to the top of his field.  Aside from being a leader, Daniel enjoys three things, leveraging technology, saving money and brewing craft beers. 
                     </p>
                   </template>
-                  <template slot="cardAction">
+                  <!-- <template slot="cardAction">
                     <md-button
                       href="javascript:void(0)"
                       class="md-twitter md-just-icon md-simple"
@@ -160,7 +159,7 @@
                     >
                       <i class="fab fa-google" />
                     </md-button>
-                  </template>
+                  </template> -->
                 </profile-card>
               </div>
               <div class="md-layout-item md-size-50 md-small-size-100">
@@ -170,21 +169,21 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
+                  :card-image="profileImages.frank"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      Kendall Andrew
+                      Frank Benevento
                     </h4>
                     <h6 class="card-category text-muted">
-                      GRAPHIC DESIGNER
+                      Co-Founder, COO
                     </h6>
                     <p class="card-description">
-                      Don't be scared of the truth because we need to restart
-                      the human foundation in truth...
+                      Our second Co-Founder, Frank, has been working in the IT Industry for over 18 years.  He enjoys working through problems, learning new technologies and collaborating at all levels.  Frank works very closely with the development and AWS teams ensuring customer needs come first.  
                     </p>
                   </template>
                   <template slot="cardAction">
-                    <md-button
+                    <!-- <md-button
                       href="javascript:void(0)"
                       class="md-linkedin md-just-icon md-simple"
                     >
@@ -207,7 +206,7 @@
                       class="md-google md-just-icon md-simple"
                     >
                       <i class="fab fa-google" />
-                    </md-button>
+                    </md-button> -->
                   </template>
                 </profile-card>
               </div>
@@ -218,38 +217,18 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
+                  :card-image="profileImages.terry"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      Gina Andrew
+                      Terry
                     </h4>
                     <h6 class="card-category text-muted">
-                      PHOTOGRAPHER
+                      Senior AWS Engineer
                     </h6>
                     <p class="card-description">
-                      I love you like Kanye loves Kanye. Don't be scared of the
-                      truth.
+                      When there is an AWS question, Terry has the answer. He is our resident AWS rock-star. Terry heads up the AWS team providing expert guidence and leadership.  Terry holds many AWS certificates and enjoys working with the AWS platform very much.  
                     </p>
-                  </template>
-                  <template slot="cardAction">
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-youtube md-just-icon md-simple"
-                    >
-                      <i class="fab fa-youtube" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-twitter md-just-icon md-simple"
-                    >
-                      <i class="fab fa-twitter" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-instagram md-just-icon md-simple"
-                    >
-                      <i class="fab fa-instagram" />
-                    </md-button>
                   </template>
                 </profile-card>
               </div>
@@ -260,38 +239,18 @@
                   type="horizontal"
                   :shadow-normal="false"
                   :no-colored-shadow="false"
+                  :card-image="profileImages.karthik"
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      George West
+                      Karthik
                     </h4>
                     <h6 class="card-category text-muted">
-                      BACKEND HACKER
+                      Senior Software Engineer
                     </h6>
                     <p class="card-description">
-                      I love you like Kanye loves Kanye. Don't be scared of the
-                      truth.
+                      Karthik has been building software solutions for over 12 years. With an adventure seeking spirit, Karthik is not afraid to take on any problem.  He believes that software should not only fit the business needs of today, but should scale with your growth.
                     </p>
-                  </template>
-                  <template slot="cardAction">
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-linkedin md-just-icon md-simple"
-                    >
-                      <i class="fab fa-linkedin" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-facebook md-just-icon md-simple"
-                    >
-                      <i class="fab fa-facebook" />
-                    </md-button>
-                    <md-button
-                      href="javascript:void(0)"
-                      class="md-google md-just-icon md-simple"
-                    >
-                      <i class="fab fa-google" />
-                    </md-button>
                   </template>
                 </profile-card>
               </div>
@@ -307,10 +266,7 @@
                 Work with us
               </h2>
               <h4 class="text-center description">
-                Divide details about your product or agency work into parts.
-                Write a few lines about each one and contact us about any
-                further collaboration. We will responde get back to you in a
-                couple of hours.
+                Have questions? Drop us a line, our team is ready to help. We firmly believe that when you're name is on a product, it better be perfect. Let us partner with you for a better system design. From AWS infrastructure to Full-Stack development, we have you covered. 
               </h4>
               <form class="contact-form">
                 <div class="md-layout">
@@ -371,13 +327,19 @@ export default {
       name: null,
       email: null,
       message: null,
+      profileImages:{
+        daniel:require("@/assets/img/daniel.jpg"),
+        frank:require("@/assets/img/frank.jpg"),
+        terry:require("@/assets/img/terry.jpg"),
+        karthik:require("@/assets/img/karthik.jpg")
+      },
       productImages: {
         soft: require("@/assets/img/software.png"),
         maint: require("@/assets/img/maint.png"),
         aws: require("@/assets/img/aws.png"),
         open: require("@/assets/img/open.png")
       }
-    };
+    }
   }
 };
 </script>
@@ -403,8 +365,14 @@ export default {
 .spaceBottom{
   margin-bottom:150px;
 }
-@media only screen and (max-width: 768px) {
+.largeOnly{
+  display:block;
+}
+@media only screen and (max-width: 750px) {
   .fullScreen {
+    display:none; 
+  }
+  .largeOnly{
     display:none;
   }
   .spaceBottom{

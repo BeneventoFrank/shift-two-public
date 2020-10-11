@@ -10,39 +10,16 @@
     <template
       v-if="$route.name !== 'ecommerce-page' && $route.name !== 'presentation'"
     >
-      <div class="container">
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/presentation">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                Licenses
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="copyright">
-          &copy; {{ year }}, made with <md-icon>favorite</md-icon> by
-          <a
-            href="https://www.creative-tim.com/"
-            target="_blank"
-          >Creative Tim</a>
-          for a better web.
+      <div class="container" style="padding-top:30px; padding-bottom:30px;">
+        <div class='md-size-33 md-small-size-100'>
+          Phone (817) 805-5994
         </div>
+        <div class='md-size-33 md-small-size-100'>
+          Email feedback@shift-two.com
+        </div>
+        <div class='md-size-33 md-small-size-100'>
+          &copy; {{ year }}, Shift-Two LLC
+        </div>          
       </div>
     </template>
 
