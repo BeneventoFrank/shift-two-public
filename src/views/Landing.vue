@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="md-layout smallOnly">
-          <div class="md-layout-item" style=" display:flex; white-space:nowrap; justify-content:center; margin-top:-100px; margin-bottom:200px;">
+          <div class="md-layout-item" style=" display:flex; white-space:nowrap; justify-content:center; margin-top:-50px; margin-bottom:60px;">
               <h1 class="title" style="color:#c66019 !important; margin-left:15px;">
                  Shift-Two
               </h1>            
@@ -131,7 +131,7 @@
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      Daniel Hillis
+                      Daniel
                     </h4>
                     <h6 class="card-category text-muted">
                       Co-Founder, CFO
@@ -173,13 +173,13 @@
                 >
                   <template slot="cardContent">
                     <h4 class="card-title">
-                      Frank Benevento
+                      Frank
                     </h4>
                     <h6 class="card-category text-muted">
                       Co-Founder, COO
                     </h6>
                     <p class="card-description">
-                      Our second Co-Founder, Frank, has been working in the IT Industry for over 18 years.  He enjoys working through problems, learning new technologies and collaborating at all levels.  Frank works very closely with the development and AWS teams ensuring customer needs come first.  
+                      Frank brings a diverse solutions background as well as over 20 years of experience in the IT industry.  He enjoys working through problems, learning new technologies and collaborating at all levels.  Frank works very closely with the development and AWS teams ensuring customers needs come first.  
                     </p>
                   </template>
                   <template slot="cardAction">
@@ -363,7 +363,7 @@ export default {
   display:block;
 }
 .spaceBottom{
-  margin-bottom:150px;
+  margin-bottom:60px;
 }
 .largeOnly{
   display:block;
