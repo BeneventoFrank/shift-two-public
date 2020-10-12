@@ -17,7 +17,7 @@
       <div class="md-toolbar-section-end">
             <div class="md-size-100 fontSize" style="display:flex; flex-direction:column;">
               <div><span>Phone: </span><span>(817) 805-5994</span></div>
-              <div><span>Email: </span><span style="text-decoration:underline; color:#5CABDB;">feedback</span></div>
+              <div><span>Email: </span><a href='mailto:feedback@shift-two.com?subject=Shift-Two%20Feedback' style="color:#5CABDB;">feedback</a></div>
               <div><span>Location: </span><span>Baton Rouge, LA.</span></div>
             </div>
       </div>
