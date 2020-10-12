@@ -146,7 +146,7 @@ export default {
         document.body.scrollTop || document.documentElement.scrollTop;
       let navbarColor = document.getElementById("toolbar");
       this.currentScrollValue = scrollValue;
-      if (this.colorOnScroll > 0 && scrollValue > this.colorOnScroll) {
+      if (this.colorOnScroll > 0 && scrollValue > 0) {
         this.extraNavClasses = `md-${this.type}`;
         navbarColor.classList.remove("md-transparent");
       } else {
